@@ -3,6 +3,7 @@
 namespace Database\Seeders;
 
 use Illuminate\Database\Seeder;
+use Illuminate\Support\Facades\DB;
 
 class golonganSeeder extends Seeder
 {
@@ -56,6 +57,6 @@ class golonganSeeder extends Seeder
             ],            
         ];
 
-        \DB::table('golongans')->insert($post);
+        DB::table('golongans')->insert($post);
     }
 }
